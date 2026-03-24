@@ -1,9 +1,6 @@
 import logo from "@/assets/logo.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
-import nutrologiaImg from "@/assets/nutrologia.jpg";
-import ortopediaImg from "@/assets/ortopedia.jpg";
-import dermatologiaImg from "@/assets/dermatologia.jpg";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "#";
