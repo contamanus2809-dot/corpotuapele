@@ -1,9 +1,6 @@
 import logo from "@/assets/logo.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
-import nutrologiaImg from "@/assets/nutrologia.jpg";
-import ortopediaImg from "@/assets/ortopedia.jpg";
-import dermatologiaImg from "@/assets/dermatologia.jpg";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "#";
@@ -87,17 +84,14 @@ const specialties = [
   {
     title: "Nutrologia Esportiva",
     description: "Estratégias médicas voltadas à performance, composição corporal, energia e longevidade.",
-    image: nutrologiaImg,
   },
   {
     title: "Ortopedia",
     description: "Cuidado especializado para recuperação, mobilidade, dor e qualidade de vida.",
-    image: ortopediaImg,
   },
   {
     title: "Dermatologia",
     description: "Saúde da pele com olhar estético, clínico e preventivo.",
-    image: dermatologiaImg,
   },
 ];
 
@@ -112,17 +106,7 @@ const Specialties = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
         {specialties.map((spec) => (
-          <div key={spec.title} className="group">
-            <div className="overflow-hidden mb-6">
-              <img
-                src={spec.image}
-                alt={spec.title}
-                loading="lazy"
-                width={800}
-                height={600}
-                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
+          <div key={spec.title} className="border-t border-border pt-8">
             <h3 className="text-2xl font-editorial text-foreground mb-3">{spec.title}</h3>
             <p className="text-muted-foreground font-light leading-relaxed">{spec.description}</p>
           </div>
