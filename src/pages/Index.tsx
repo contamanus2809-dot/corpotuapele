@@ -243,7 +243,7 @@ const Footer = () => (
     <div className="container mx-auto px-6 lg:px-16">
       <div className="grid md:grid-cols-3 gap-12 mb-12">
         <div>
-          <img src={logo} alt="Corpo Tua Pele" className="w-32 brightness-0 invert opacity-70 mb-4" />
+          <img src={logoWhite} alt="Corpo Tua Pele" className="w-32 opacity-70 mb-4" />
           <p className="text-sm font-light leading-relaxed">
             Medicina, estética e performance com olhar sofisticado e individualizado.
           </p>
