@@ -319,6 +319,7 @@ const Index = () => (
     <Attendance />
     <Doctor />
     <Differentials />
+    <ClinicGallery />
     <Contact />
     <Footer />
   </main>
