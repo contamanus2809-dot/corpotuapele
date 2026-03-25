@@ -20,7 +20,7 @@ const Hero = () => (
     </div>
     <div className="relative z-10 container mx-auto px-6 lg:px-16">
       <div className="max-w-2xl">
-        <img src={logo} alt="Corpo Tua Pele" className="w-40 md:w-52 mb-10 brightness-0 invert opacity-90" />
+        <img src={logo} alt="Corpo Tua Pele" className="w-40 md:w-52 mb-10 drop-shadow-lg" />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-editorial leading-tight text-primary-foreground mb-6 text-balance">
           Medicina, estética e performance com olhar sofisticado e individualizado.
         </h1>
