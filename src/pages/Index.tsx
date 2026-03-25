@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/logo-white.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
@@ -20,7 +21,7 @@ const Hero = () => (
     </div>
     <div className="relative z-10 container mx-auto px-6 lg:px-16">
       <div className="max-w-2xl">
-        <img src={logo} alt="Corpo Tua Pele" className="w-40 md:w-52 mb-10 drop-shadow-lg" />
+        <img src={logoWhite} alt="Corpo Tua Pele" className="w-40 md:w-52 mb-10 drop-shadow-lg" />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-editorial leading-tight text-primary-foreground mb-6 text-balance">
           Medicina, estética e performance com olhar sofisticado e individualizado.
         </h1>
@@ -242,7 +243,7 @@ const Footer = () => (
     <div className="container mx-auto px-6 lg:px-16">
       <div className="grid md:grid-cols-3 gap-12 mb-12">
         <div>
-          <img src={logo} alt="Corpo Tua Pele" className="w-32 brightness-0 invert opacity-70 mb-4" />
+          <img src={logoWhite} alt="Corpo Tua Pele" className="w-32 opacity-70 mb-4" />
           <p className="text-sm font-light leading-relaxed">
             Medicina, estética e performance com olhar sofisticado e individualizado.
           </p>
