@@ -2,6 +2,9 @@ import logo from "@/assets/logo.png";
 import logoWhite from "@/assets/logo-white.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
+import clinicReception from "@/assets/clinic-reception.webp";
+import clinicEntrance from "@/assets/clinic-entrance.webp";
+import clinicRoom from "@/assets/clinic-room.webp";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.me/5517991615167";
@@ -194,6 +197,39 @@ const Differentials = () => (
   </section>
 );
 
+const ClinicGallery = () => (
+  <section className="py-24 md:py-32 bg-card">
+    <div className="container mx-auto px-6 lg:px-16">
+      <div className="text-center mb-16 md:mb-20">
+        <p className="text-sm tracking-widest uppercase text-muted-foreground mb-4 font-body">Nosso espaço</p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-editorial text-foreground max-w-2xl mx-auto">
+          Um ambiente pensado para o seu conforto
+        </h2>
+      </div>
+      <div className="grid md:grid-cols-3 gap-4">
+        <img
+          src={clinicEntrance}
+          alt="Recepção da clínica Corpo Tua Pele com logo na parede"
+          loading="lazy"
+          className="w-full h-[400px] md:h-[500px] object-cover"
+        />
+        <img
+          src={clinicReception}
+          alt="Sala de espera com decoração sofisticada e iluminação acolhedora"
+          loading="lazy"
+          className="w-full h-[400px] md:h-[500px] object-cover"
+        />
+        <img
+          src={clinicRoom}
+          alt="Consultório com vista panorâmica e acabamento em mármore"
+          loading="lazy"
+          className="w-full h-[400px] md:h-[500px] object-cover"
+        />
+      </div>
+    </div>
+  </section>
+);
+
 const Contact = () => (
   <section className="py-24 md:py-32 bg-primary text-primary-foreground">
     <div className="container mx-auto px-6 lg:px-16">
@@ -230,7 +266,7 @@ const Contact = () => (
           </div>
           <div className="flex flex-col items-center gap-2">
             <MapPin className="w-5 h-5" />
-            <span className="font-light">Endereço a definir</span>
+            <span className="font-light">Av. Domingos Odália Filho, 301 — Sala 1014, Centro, Osasco – SP</span>
           </div>
         </div>
       </div>
@@ -283,6 +319,7 @@ const Index = () => (
     <Attendance />
     <Doctor />
     <Differentials />
+    <ClinicGallery />
     <Contact />
     <Footer />
   </main>
