@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
 
-const WHATSAPP_LINK = "#";
+const WHATSAPP_LINK = "https://wa.me/5517991615167";
 const AGENDAR_LINK = "#";
 
 const Hero = () => (
