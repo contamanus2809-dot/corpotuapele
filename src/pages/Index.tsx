@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/logo-white.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
