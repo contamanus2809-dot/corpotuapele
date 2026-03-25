@@ -2,6 +2,9 @@ import logo from "@/assets/logo.png";
 import logoWhite from "@/assets/logo-white.png";
 import heroImg from "@/assets/hero-clinic.jpg";
 import aboutImg from "@/assets/about-wellness.jpg";
+import clinicReception from "@/assets/clinic-reception.webp";
+import clinicEntrance from "@/assets/clinic-entrance.webp";
+import clinicRoom from "@/assets/clinic-room.webp";
 import { Phone, MessageCircle, MapPin, Instagram, Mail, Monitor, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.me/5517991615167";
