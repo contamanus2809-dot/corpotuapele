@@ -1,18 +1,20 @@
 
 
-## Problema
+# Plano: Editar imagem — trocar revista por tema saúde/esporte
 
-O logo no Hero usa `brightness-0 invert` para ficar branco, mas sobre áreas claras da imagem de fundo ele perde visibilidade. O mesmo acontece no Footer.
+## Contexto
+A imagem em questão provavelmente é a `clinic-reception.webp` (sala de espera) ou `about-wellness.jpg`, que mostra uma pessoa lendo uma revista no sofá. Vou identificar a imagem correta e usar IA generativa para editá-la.
 
-## Solução
+## Passos
 
-1. **Hero**: Remover `brightness-0 invert` do logo e exibi-lo com suas cores originais (marrom sobre bege), adicionando um leve fundo com backdrop-blur ou sombra para garantir contraste sobre a imagem.
+1. **Identificar a imagem correta** — Abrir o preview no browser para confirmar qual das imagens (`clinic-reception.webp`, `about-wellness.jpg`, etc.) mostra o rapaz no sofá lendo revista.
 
-2. **Footer**: O footer tem fundo escuro (`bg-foreground`), então o `brightness-0 invert` faz sentido ali. Manter como está.
+2. **Editar a imagem com IA** — Usar o modelo de edição de imagem (Gemini) para substituir a revista por uma com tema de saúde ou esporte (ex: capa com atleta, corrida, musculação ou tema fitness/wellness).
 
-### Alternativa mais elegante
-Usar o logo original (cores naturais) no Hero com um sutil `drop-shadow` para destacá-lo da imagem de fundo, mantendo a identidade visual da marca visível.
+3. **Substituir o arquivo no projeto** — Salvar a imagem editada no lugar da original em `src/assets/`.
 
-### Arquivo alterado
-- `src/pages/Index.tsx` — linha 23: remover `brightness-0 invert opacity-90`, adicionar `drop-shadow-lg` para contraste.
+## Detalhes técnicos
+- Será usado o modelo `google/gemini-2.5-flash-image` via API para edição de imagem
+- A instrução para o modelo será algo como: "Replace the magazine the man is reading with a health/sports themed magazine cover"
+- O arquivo original será substituído mantendo o mesmo nome e formato
 
