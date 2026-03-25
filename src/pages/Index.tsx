@@ -233,7 +233,7 @@ const Contact = () => (
           </div>
           <div className="flex flex-col items-center gap-2">
             <MapPin className="w-5 h-5" />
-            <span className="font-light">Endereço a definir</span>
+            <span className="font-light">Av. Domingos Odália Filho, 301 — Sala 1014, Centro, Osasco – SP</span>
           </div>
         </div>
       </div>
